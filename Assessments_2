@@ -1,0 +1,22 @@
+Question 1
+Load the heights dataset from dslabs:
+library(dslabs)
+data(heights)
+Write an ifelse() statement that returns 1 if the sex is Female and 2 if the sex is Male.
+>x = ifelse(heights$sex == "Female", 1, 2)
+>sum(x)
+R: 1862
+
+Question 3
+Write a function inches_to_ft that takes a number of inches x and returns the number of feet. One foot equals 12 inches.
+What is inches_to_ft(144)?
+>inches_to_ft = function(x){
+  y = x/12
+  y
+ }
+inches_to_ft(144)
+R = 12
+How many individuals in the heights dataset have a height less than 5 feet?
+>heights %>% filter(heights$height < 60)
+R = 20 pessoas
+
